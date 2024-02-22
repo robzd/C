@@ -7,3 +7,6 @@ int main() {
     
     return 0;
 }
+
+// g++ -Wall -o abcde test.c
+// ./abcde
