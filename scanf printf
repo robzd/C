@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+float media(float a, float b, float c, float d){
+return (a+b+c+d)/4;
+}
+
+int main(){
+float a,b,c,d;
+scanf("%f %f %f %f", &a,&b,&c,&d);
+printf("Media = %f", media(a,b,c,d));
+return 0;
+}
