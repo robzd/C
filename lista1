@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+char* questao1() {
+    return "a) 2\nb) 8\nc) 10\nd) 3\ne) 21\nf) 33\ng) 1\nh) 14\ni) 2";
+}
+char* questao2() {
+    return "altera apenas o IF, ficando:   if(a[i] == 5 && index == -1){";
+}
+char* questao3() {
+    return "altera apenas o IF, ficando:   if(a[i] == 3){";
+}
+char* questao4() {
+    return "altera apenas o começo do código, ficando:   int n = scanf(""porcentoD"", &n);";
+}
+char* questao5() {
+    return "4 5 9 7";
+}
+char* questao6() {
+    return "2 0 3 6\n6 3 0 2";
+}
+char* questao7() {
+    return "ni = 4\nnp = 2";
+}
+int questao8() {
+    int n1, n2, n3, n4, n5;
+    scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+    int menor = n1;
+    if (n2 < menor){
+        menor = n2;
+    }
+    if (n3 < menor){
+        menor = n3;
+    }
+    if (n4 < menor){
+        menor = n4;
+    }
+    if (n5 < menor){
+        menor = n5;
+    }
+    return menor;
+}
+
+int main() {
+    int questao;
+    printf("Digite a Questão: ");
+    scanf("%d", &questao);
+
+    if (questao == 1)
+        printf("%s\n", questao1());
+    if (questao == 2)
+        printf("%s\n", questao2());
+    if (questao == 3)
+        printf("%s\n", questao3());
+    if (questao == 4)
+        printf("%s\n", questao4());
+    if (questao == 5)
+        printf("%s\n", questao5());
+    if (questao == 6)
+        printf("%s\n", questao6());
+    if (questao == 7)
+        printf("%s\n", questao7());
+    if (questao == 8)
+        printf("%d\n", questao8());
+        
+    return 0;
+}
